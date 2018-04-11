@@ -12,11 +12,12 @@ import SpriteKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var Scene: ARSKView!
+    @IBOutlet weak var Scene: ARSCNView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        Scene.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +25,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        Scene.session.run(sceneViewConfig)
+        print(Scene.scene.rootNode.childNodes)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Pause the view's session
+        Scene.session.pause()
+    }
+    
     var sceneViewConfig: ARWorldTrackingConfiguration = {
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()

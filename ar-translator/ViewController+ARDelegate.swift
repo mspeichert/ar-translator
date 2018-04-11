@@ -8,7 +8,7 @@
 
 import ARKit
 
-extension ViewController: ARSKViewDelegate,  ARSessionDelegate {
+extension ViewController: ARSCNViewDelegate,  ARSessionDelegate {
     func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
         
         switch camera.trackingState {
