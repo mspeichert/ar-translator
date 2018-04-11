@@ -14,8 +14,7 @@ public extension SwiftOCR {
             let preprocessedImage      = self.delegate?.preprocessImageForOCR(image) ?? self.preprocessImageForOCR(image)
             
             let blobs                  = self.extractBlobs(preprocessedImage)
-            // extract location
-            onCompleted(blobs)
+            onCompleted(blobs.map({$0.1}))
         }
     }
 }
