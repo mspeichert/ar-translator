@@ -13,8 +13,49 @@
 		4A2BD421206FE5DA00A54428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2BD41F206FE5DA00A54428 /* Main.storyboard */; };
 		4A2BD423206FE5DA00A54428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2BD422206FE5DA00A54428 /* Assets.xcassets */; };
 		4A2BD426206FE5DA00A54428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2BD424206FE5DA00A54428 /* LaunchScreen.storyboard */; };
-		4A67FA3E207B6E3400A13E37 /* SwiftOCR in Resources */ = {isa = PBXBuildFile; fileRef = 4A67FA3D207B6E3300A13E37 /* SwiftOCR */; };
+		4AD2EDE9207EAEEF002F3824 /* SwiftOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0A022F207EABD800B5E129 /* SwiftOCR.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		4AD2EDEA207EB105002F3824 /* SwiftOCR.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A0A022F207EABD800B5E129 /* SwiftOCR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4AD2EDEC207EB14E002F3824 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD2EDEB207EB14E002F3824 /* GPUImage.framework */; };
+		4AD2EDED207EB18E002F3824 /* GPUImage.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4AD2EDEB207EB14E002F3824 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A0A022E207EABD800B5E129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 373ED0AF1CC9071C00C4758B;
+			remoteInfo = SwiftOCR;
+		};
+		4A0A0230207EABD800B5E129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 373ED0B91CC9071D00C4758B;
+			remoteInfo = SwiftOCRTests;
+		};
+		4A0A0232207EABD800B5E129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 373ED0E61CC909A500C4758B;
+			remoteInfo = "SwiftOCR Mac";
+		};
+		4A0A0234207EABD800B5E129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 373ED0EF1CC909A500C4758B;
+			remoteInfo = "SwiftOCR MacTests";
+		};
+		4A0A0239207EAE2300B5E129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 373ED0AE1CC9071C00C4758B;
+			remoteInfo = SwiftOCR;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4F2E535D207D8B6C0052C5A3 /* Copy Files */ = {
@@ -23,6 +64,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4AD2EDEA207EB105002F3824 /* SwiftOCR.framework in Copy Files */,
+				4AD2EDED207EB18E002F3824 /* GPUImage.framework in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -30,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SwiftOCR.xcodeproj; sourceTree = "<group>"; };
 		4A176BFB207E539D00F18A1E /* ViewController+ARDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ARDelegate.swift"; sourceTree = "<group>"; };
 		4A2BD418206FE5DA00A54428 /* ar-translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ar-translator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2BD41B206FE5DA00A54428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +82,7 @@
 		4A2BD422206FE5DA00A54428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A2BD425206FE5DA00A54428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A2BD427206FE5DA00A54428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A67FA3D207B6E3300A13E37 /* SwiftOCR */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftOCR; sourceTree = "<group>"; };
+		4AD2EDEB207EB14E002F3824 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,12 +90,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD2EDEC207EB14E002F3824 /* GPUImage.framework in Frameworks */,
+				4AD2EDE9207EAEEF002F3824 /* SwiftOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A0A0226207EABD800B5E129 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A0A022F207EABD800B5E129 /* SwiftOCR.framework */,
+				4A0A0231207EABD800B5E129 /* SwiftOCRTests.xctest */,
+				4A0A0233207EABD800B5E129 /* SwiftOCR.framework */,
+				4A0A0235207EABD800B5E129 /* SwiftOCR MacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4A2BD40F206FE5DA00A54428 = {
 			isa = PBXGroup;
 			children = (
@@ -76,7 +133,6 @@
 				4A2BD41D206FE5DA00A54428 /* ViewController.swift */,
 				4A176BFB207E539D00F18A1E /* ViewController+ARDelegate.swift */,
 				4A2BD41F206FE5DA00A54428 /* Main.storyboard */,
-				4A67FA3D207B6E3300A13E37 /* SwiftOCR */,
 				4A2BD422206FE5DA00A54428 /* Assets.xcassets */,
 				4A2BD424206FE5DA00A54428 /* LaunchScreen.storyboard */,
 				4A2BD427206FE5DA00A54428 /* Info.plist */,
@@ -87,6 +143,8 @@
 		4F2E535B207D8B680052C5A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4AD2EDEB207EB14E002F3824 /* GPUImage.framework */,
+				4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,6 +164,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4A0A023A207EAE2300B5E129 /* PBXTargetDependency */,
 			);
 			name = "ar-translator";
 			productName = "ar-translator";
@@ -139,6 +198,12 @@
 			mainGroup = 4A2BD40F206FE5DA00A54428;
 			productRefGroup = 4A2BD419206FE5DA00A54428 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4A0A0226207EABD800B5E129 /* Products */;
+					ProjectRef = 4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4A2BD417206FE5DA00A54428 /* ar-translator */,
@@ -146,13 +211,43 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4A0A022F207EABD800B5E129 /* SwiftOCR.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftOCR.framework;
+			remoteRef = 4A0A022E207EABD800B5E129 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A0A0231207EABD800B5E129 /* SwiftOCRTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftOCRTests.xctest;
+			remoteRef = 4A0A0230207EABD800B5E129 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A0A0233207EABD800B5E129 /* SwiftOCR.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftOCR.framework;
+			remoteRef = 4A0A0232207EABD800B5E129 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A0A0235207EABD800B5E129 /* SwiftOCR MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftOCR MacTests.xctest";
+			remoteRef = 4A0A0234207EABD800B5E129 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		4A2BD416206FE5DA00A54428 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4A2BD426206FE5DA00A54428 /* LaunchScreen.storyboard in Resources */,
-				4A67FA3E207B6E3400A13E37 /* SwiftOCR in Resources */,
 				4A2BD423206FE5DA00A54428 /* Assets.xcassets in Resources */,
 				4A2BD421206FE5DA00A54428 /* Main.storyboard in Resources */,
 			);
@@ -172,6 +267,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A0A023A207EAE2300B5E129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftOCR;
+			targetProxy = 4A0A0239207EAE2300B5E129 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4A2BD41F206FE5DA00A54428 /* Main.storyboard */ = {
@@ -227,6 +330,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -290,6 +394,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -315,11 +420,13 @@
 		4A2BD42B206FE5DA00A54428 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PEYF3H28AH;
+				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = (
 					../GPUImage/Source,
 					../GPUImage/Source/IOS,
@@ -337,11 +444,13 @@
 		4A2BD42C206FE5DA00A54428 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PEYF3H28AH;
+				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = (
 					../GPUImage/Source,
 					../GPUImage/Source/IOS,

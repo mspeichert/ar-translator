@@ -83,7 +83,6 @@ open class SwiftOCR {
 		self.recognize(image, completionHandler)
 	}
 	
-    
     /**
      
      Performs ocr on the image.

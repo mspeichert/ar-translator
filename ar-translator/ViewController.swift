@@ -9,10 +9,19 @@
 import UIKit
 import ARKit
 import SpriteKit
+import SwiftOCR
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var Scene: ARSCNView!
+    let OCRInstance = SwiftOCR()
+    
+    @IBAction func onSnapPressed(_ sender: Any) {
+        let image = Scene.snapshot()
+        OCRInstance.performCCL(image){ sizes in
+            print(sizes)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

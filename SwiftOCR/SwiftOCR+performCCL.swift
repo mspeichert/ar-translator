@@ -9,7 +9,7 @@ public extension SwiftOCR {
      results of this action.
      
      */
-    open func performCCL(_ image: OCRImage, _ onCompleted: [(Float, Float)] -> Void){
+    open func performCCL(_ image: OCRImage, _ onCompleted: @escaping ([CGRect]) -> Void){
         DispatchQueue.global(qos: .userInitiated).async {
             let preprocessedImage      = self.delegate?.preprocessImageForOCR(image) ?? self.preprocessImageForOCR(image)
             
