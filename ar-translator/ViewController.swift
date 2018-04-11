@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import ARKit
+import SpriteKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Scene: ARSKView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    var sceneViewConfig: ARWorldTrackingConfiguration = {
+        // Create a session configuration
+        let configuration = ARWorldTrackingConfiguration()
+        configuration.planeDetection = .horizontal
+        return configuration
+    }()
 }
-
