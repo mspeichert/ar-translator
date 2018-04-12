@@ -18,3 +18,4 @@ public extension SwiftOCR {
         }
     }
 }
+

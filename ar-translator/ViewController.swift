@@ -10,16 +10,27 @@ import UIKit
 import ARKit
 import SpriteKit
 import SwiftOCR
+import CoreMotion
 
 class ViewController: UIViewController {
-
     @IBOutlet weak var Scene: ARSCNView!
     let OCRInstance = SwiftOCR()
+    var orientationManager: OrientationManager?
     
     @IBAction func onSnapPressed(_ sender: Any) {
-        let image = Scene.snapshot()
+        let rotation = self.orientationManager?.rotation
+        
+        guard rotation != nil else {
+            return
+        }
+        
+        let image = Scene.snapshot().rotate(radians: -rotation!)!
         OCRInstance.performCCL(image){ sizes in
             print(sizes)
+        }
+        
+        OCRInstance.recognize(image){ result in
+            print(result)
         }
     }
     
@@ -27,6 +38,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         Scene.delegate = self
+        orientationManager = OrientationManager()
     }
 
     override func didReceiveMemoryWarning() {

@@ -13,6 +13,8 @@
 		4A2BD421206FE5DA00A54428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2BD41F206FE5DA00A54428 /* Main.storyboard */; };
 		4A2BD423206FE5DA00A54428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2BD422206FE5DA00A54428 /* Assets.xcassets */; };
 		4A2BD426206FE5DA00A54428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2BD424206FE5DA00A54428 /* LaunchScreen.storyboard */; };
+		4A67CEA6207F62C700371298 /* UIImage+rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A67CEA5207F62C700371298 /* UIImage+rotate.swift */; };
+		4AA3EF71207FC630008D19F5 /* OrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3EF70207FC630008D19F5 /* OrientationManager.swift */; };
 		4AD2EDE9207EAEEF002F3824 /* SwiftOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0A022F207EABD800B5E129 /* SwiftOCR.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4AD2EDEA207EB105002F3824 /* SwiftOCR.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A0A022F207EABD800B5E129 /* SwiftOCR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AD2EDEC207EB14E002F3824 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD2EDEB207EB14E002F3824 /* GPUImage.framework */; };
@@ -82,6 +84,8 @@
 		4A2BD422206FE5DA00A54428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A2BD425206FE5DA00A54428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A2BD427206FE5DA00A54428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A67CEA5207F62C700371298 /* UIImage+rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+rotate.swift"; sourceTree = "<group>"; };
+		4AA3EF70207FC630008D19F5 /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
 		4AD2EDEB207EB14E002F3824 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,11 +135,13 @@
 			children = (
 				4A2BD41B206FE5DA00A54428 /* AppDelegate.swift */,
 				4A2BD41D206FE5DA00A54428 /* ViewController.swift */,
+				4AA3EF70207FC630008D19F5 /* OrientationManager.swift */,
 				4A176BFB207E539D00F18A1E /* ViewController+ARDelegate.swift */,
 				4A2BD41F206FE5DA00A54428 /* Main.storyboard */,
 				4A2BD422206FE5DA00A54428 /* Assets.xcassets */,
 				4A2BD424206FE5DA00A54428 /* LaunchScreen.storyboard */,
 				4A2BD427206FE5DA00A54428 /* Info.plist */,
+				4A67CEA5207F62C700371298 /* UIImage+rotate.swift */,
 			);
 			path = "ar-translator";
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A176BFC207E539D00F18A1E /* ViewController+ARDelegate.swift in Sources */,
+				4A67CEA6207F62C700371298 /* UIImage+rotate.swift in Sources */,
+				4AA3EF71207FC630008D19F5 /* OrientationManager.swift in Sources */,
 				4A2BD41E206FE5DA00A54428 /* ViewController.swift in Sources */,
 				4A2BD41C206FE5DA00A54428 /* AppDelegate.swift in Sources */,
 			);
