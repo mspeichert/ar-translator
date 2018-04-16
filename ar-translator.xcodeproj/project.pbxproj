@@ -19,6 +19,7 @@
 		4AD2EDEA207EB105002F3824 /* SwiftOCR.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A0A022F207EABD800B5E129 /* SwiftOCR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AD2EDEC207EB14E002F3824 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD2EDEB207EB14E002F3824 /* GPUImage.framework */; };
 		4AD2EDED207EB18E002F3824 /* GPUImage.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4AD2EDEB207EB14E002F3824 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F5B8464208030D200AE0D1E /* BlobArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5B8463208030D200AE0D1E /* BlobArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		4A67CEA5207F62C700371298 /* UIImage+rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+rotate.swift"; sourceTree = "<group>"; };
 		4AA3EF70207FC630008D19F5 /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
 		4AD2EDEB207EB14E002F3824 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5B8463208030D200AE0D1E /* BlobArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				4A2BD424206FE5DA00A54428 /* LaunchScreen.storyboard */,
 				4A2BD427206FE5DA00A54428 /* Info.plist */,
 				4A67CEA5207F62C700371298 /* UIImage+rotate.swift */,
+				4F5B8463208030D200AE0D1E /* BlobArea.swift */,
 			);
 			path = "ar-translator";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A176BFC207E539D00F18A1E /* ViewController+ARDelegate.swift in Sources */,
+				4F5B8464208030D200AE0D1E /* BlobArea.swift in Sources */,
 				4A67CEA6207F62C700371298 /* UIImage+rotate.swift in Sources */,
 				4AA3EF71207FC630008D19F5 /* OrientationManager.swift in Sources */,
 				4A2BD41E206FE5DA00A54428 /* ViewController.swift in Sources */,
@@ -433,7 +437,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PEYF3H28AH;
+				DEVELOPMENT_TEAM = N94AFLJG9D;
 				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = (
 					../GPUImage/Source,
@@ -442,7 +446,7 @@
 				);
 				INFOPLIST_FILE = "ar-translator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.ar-translator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.mar..ar-translator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +461,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PEYF3H28AH;
+				DEVELOPMENT_TEAM = N94AFLJG9D;
 				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = (
 					../GPUImage/Source,
@@ -466,7 +470,7 @@
 				);
 				INFOPLIST_FILE = "ar-translator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.ar-translator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.mar..ar-translator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
