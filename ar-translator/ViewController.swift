@@ -12,7 +12,7 @@ import SpriteKit
 import SwiftOCR
 import CoreMotion
 import ROGT
-
+import DotEnv
 class ViewController: UIViewController {
     @IBOutlet weak var Scene: ARSCNView!
     @IBOutlet weak var blobsArea: UIImageView!
@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     var arrayOfBlobs = [CGRect]()
     @IBAction func onSnapPressed(_ sender: Any) {
+        let env = DotEnv(withFile: ".env")
         while let subview = blobsAreaView.subviews.last {
             subview.removeFromSuperview()
         }
@@ -53,9 +54,9 @@ class ViewController: UIViewController {
              let params = ROGoogleTranslateParams(source: "pl",
              target: "en",
              text:   result)
-             //"AIzaSyA4dDdSmku8UOSePL5Nj_03YvC1IC14knI"
              let translator = ROGoogleTranslate()
-             translator.apiKey = "Your-API-Key"
+             let key = env.get("API_KEY") ?? "API-KEY-NOT-FOUND"
+             translator.apiKey = key
              
              translator.translate(params: params, callback: { (toPrint) in
              print("Translation: \(toPrint)")

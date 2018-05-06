@@ -22,6 +22,9 @@
 		4F1F1E0C209F5E34002D2CE6 /* ROGT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1F1E0B209F5E34002D2CE6 /* ROGT.framework */; };
 		4F1F1E0E209F607B002D2CE6 /* ROGT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1F1E0B209F5E34002D2CE6 /* ROGT.framework */; };
 		4F1F1E0F209F607B002D2CE6 /* ROGT.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4F1F1E0B209F5E34002D2CE6 /* ROGT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F1F1E31209F637C002D2CE6 /* DotEnv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1F1E2E209F6367002D2CE6 /* DotEnv.framework */; };
+		4F1F1E32209F6385002D2CE6 /* DotEnv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1F1E2E209F6367002D2CE6 /* DotEnv.framework */; };
+		4F1F1E33209F6385002D2CE6 /* DotEnv.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4F1F1E2E209F6367002D2CE6 /* DotEnv.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4F5B8464208030D200AE0D1E /* BlobArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5B8463208030D200AE0D1E /* BlobArea.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +85,27 @@
 			remoteGlobalIDString = 4F1F1DF8209F5DDC002D2CE6;
 			remoteInfo = ROGT;
 		};
+		4F1F1E2D209F6367002D2CE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F1F1E25209F6367002D2CE6 /* SwiftDotEnv.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SwiftDotEnv::DotEnv::Product";
+			remoteInfo = DotEnv;
+		};
+		4F1F1E2F209F6367002D2CE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F1F1E25209F6367002D2CE6 /* SwiftDotEnv.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SwiftDotEnv::DotEnvTests::Product";
+			remoteInfo = DotEnvTests;
+		};
+		4F1F1E34209F6385002D2CE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F1F1E25209F6367002D2CE6 /* SwiftDotEnv.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftDotEnv::DotEnv";
+			remoteInfo = DotEnv;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -91,6 +115,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4F1F1E33209F6385002D2CE6 /* DotEnv.framework in Copy Files */,
 				4AD2EDEA207EB105002F3824 /* SwiftOCR.framework in Copy Files */,
 				4AD2EDED207EB18E002F3824 /* GPUImage.framework in Copy Files */,
 				4F1F1E0F209F607B002D2CE6 /* ROGT.framework in Copy Files */,
@@ -114,6 +139,7 @@
 		4AA3EF70207FC630008D19F5 /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
 		4AD2EDEB207EB14E002F3824 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ROGoogleTranslate.xcodeproj; path = ../ROGoogleTranslate/ROGoogleTranslate.xcodeproj; sourceTree = "<group>"; };
+		4F1F1E25209F6367002D2CE6 /* SwiftDotEnv.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftDotEnv.xcodeproj; path = ../SwiftDotEnv/SwiftDotEnv.xcodeproj; sourceTree = "<group>"; };
 		4F5B8463208030D200AE0D1E /* BlobArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +148,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1F1E32209F6385002D2CE6 /* DotEnv.framework in Frameworks */,
+				4F1F1E31209F637C002D2CE6 /* DotEnv.framework in Frameworks */,
 				4F1F1E0C209F5E34002D2CE6 /* ROGT.framework in Frameworks */,
 				4AD2EDEC207EB14E002F3824 /* GPUImage.framework in Frameworks */,
 				4F1F1E0E209F607B002D2CE6 /* ROGT.framework in Frameworks */,
@@ -186,9 +214,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4F1F1E26209F6367002D2CE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F1F1E2E209F6367002D2CE6 /* DotEnv.framework */,
+				4F1F1E30209F6367002D2CE6 /* DotEnvTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4F2E535B207D8B680052C5A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F1F1E25209F6367002D2CE6 /* SwiftDotEnv.xcodeproj */,
 				4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */,
 				4AD2EDEB207EB14E002F3824 /* GPUImage.framework */,
 				4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */,
@@ -213,6 +251,7 @@
 			dependencies = (
 				4A0A023A207EAE2300B5E129 /* PBXTargetDependency */,
 				4F1F1E11209F607B002D2CE6 /* PBXTargetDependency */,
+				4F1F1E35209F6385002D2CE6 /* PBXTargetDependency */,
 			);
 			name = "ar-translator";
 			productName = "ar-translator";
@@ -250,6 +289,10 @@
 				{
 					ProductGroup = 4F1F1DEC209F5D7D002D2CE6 /* Products */;
 					ProjectRef = 4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */;
+				},
+				{
+					ProductGroup = 4F1F1E26209F6367002D2CE6 /* Products */;
+					ProjectRef = 4F1F1E25209F6367002D2CE6 /* SwiftDotEnv.xcodeproj */;
 				},
 				{
 					ProductGroup = 4A0A0226207EABD800B5E129 /* Products */;
@@ -306,6 +349,20 @@
 			remoteRef = 4F1F1E0A209F5E34002D2CE6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		4F1F1E2E209F6367002D2CE6 /* DotEnv.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DotEnv.framework;
+			remoteRef = 4F1F1E2D209F6367002D2CE6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F1F1E30209F6367002D2CE6 /* DotEnvTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = file;
+			path = DotEnvTests.xctest;
+			remoteRef = 4F1F1E2F209F6367002D2CE6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -347,6 +404,11 @@
 			isa = PBXTargetDependency;
 			name = ROGT;
 			targetProxy = 4F1F1E10209F607B002D2CE6 /* PBXContainerItemProxy */;
+		};
+		4F1F1E35209F6385002D2CE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DotEnv;
+			targetProxy = 4F1F1E34209F6385002D2CE6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -507,7 +569,7 @@
 					../GPUImage/Source/Mac,
 				);
 				INFOPLIST_FILE = "ar-translator/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.mar..ar-translator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,7 +594,7 @@
 					../GPUImage/Source/Mac,
 				);
 				INFOPLIST_FILE = "ar-translator/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.mar..ar-translator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
