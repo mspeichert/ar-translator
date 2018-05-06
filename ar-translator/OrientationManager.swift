@@ -11,6 +11,7 @@ import CoreMotion
 
 class OrientationManager {
     
+    let UPDATE_INTERVAL = 0.3
     var manager: CMMotionManager?
     var rotation: Float?
     
@@ -22,10 +23,7 @@ class OrientationManager {
         }
         if manager.isGyroAvailable {
             if manager.isDeviceMotionAvailable {
-                manager.deviceMotionUpdateInterval = 0.1
-//                manager.startGyroUpdates(to: queue){
-//                    (data, error) in print(data?.rotationRate)
-//                }
+                manager.deviceMotionUpdateInterval = UPDATE_INTERVAL
                 manager.startDeviceMotionUpdates(to: queue) {
                     [weak self] (data: CMDeviceMotion?, error: Error?) in
                     if let gravity = data?.gravity {
