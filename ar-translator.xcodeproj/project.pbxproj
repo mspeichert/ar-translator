@@ -19,6 +19,9 @@
 		4AD2EDEA207EB105002F3824 /* SwiftOCR.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A0A022F207EABD800B5E129 /* SwiftOCR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AD2EDEC207EB14E002F3824 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD2EDEB207EB14E002F3824 /* GPUImage.framework */; };
 		4AD2EDED207EB18E002F3824 /* GPUImage.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4AD2EDEB207EB14E002F3824 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F1F1E0C209F5E34002D2CE6 /* ROGT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1F1E0B209F5E34002D2CE6 /* ROGT.framework */; };
+		4F1F1E0E209F607B002D2CE6 /* ROGT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1F1E0B209F5E34002D2CE6 /* ROGT.framework */; };
+		4F1F1E0F209F607B002D2CE6 /* ROGT.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4F1F1E0B209F5E34002D2CE6 /* ROGT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4F5B8464208030D200AE0D1E /* BlobArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5B8463208030D200AE0D1E /* BlobArea.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,27 @@
 			remoteGlobalIDString = 373ED0AE1CC9071C00C4758B;
 			remoteInfo = SwiftOCR;
 		};
+		4F1F1DEF209F5D7D002D2CE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CBCA3FB91DB90B850025D8E4;
+			remoteInfo = ROGoogleTranslate;
+		};
+		4F1F1E0A209F5E34002D2CE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1F1DF9209F5DDC002D2CE6;
+			remoteInfo = ROGT;
+		};
+		4F1F1E10209F607B002D2CE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F1F1DF8209F5DDC002D2CE6;
+			remoteInfo = ROGT;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +93,7 @@
 			files = (
 				4AD2EDEA207EB105002F3824 /* SwiftOCR.framework in Copy Files */,
 				4AD2EDED207EB18E002F3824 /* GPUImage.framework in Copy Files */,
+				4F1F1E0F209F607B002D2CE6 /* ROGT.framework in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +113,7 @@
 		4A67CEA5207F62C700371298 /* UIImage+rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+rotate.swift"; sourceTree = "<group>"; };
 		4AA3EF70207FC630008D19F5 /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
 		4AD2EDEB207EB14E002F3824 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ROGoogleTranslate.xcodeproj; path = ../ROGoogleTranslate/ROGoogleTranslate.xcodeproj; sourceTree = "<group>"; };
 		4F5B8463208030D200AE0D1E /* BlobArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +122,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1F1E0C209F5E34002D2CE6 /* ROGT.framework in Frameworks */,
 				4AD2EDEC207EB14E002F3824 /* GPUImage.framework in Frameworks */,
+				4F1F1E0E209F607B002D2CE6 /* ROGT.framework in Frameworks */,
 				4AD2EDE9207EAEEF002F3824 /* SwiftOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,9 +177,19 @@
 			path = "ar-translator";
 			sourceTree = "<group>";
 		};
+		4F1F1DEC209F5D7D002D2CE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F1F1DF0209F5D7D002D2CE6 /* ROGoogleTranslate.app */,
+				4F1F1E0B209F5E34002D2CE6 /* ROGT.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4F2E535B207D8B680052C5A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */,
 				4AD2EDEB207EB14E002F3824 /* GPUImage.framework */,
 				4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */,
 			);
@@ -174,6 +212,7 @@
 			);
 			dependencies = (
 				4A0A023A207EAE2300B5E129 /* PBXTargetDependency */,
+				4F1F1E11209F607B002D2CE6 /* PBXTargetDependency */,
 			);
 			name = "ar-translator";
 			productName = "ar-translator";
@@ -208,6 +247,10 @@
 			productRefGroup = 4A2BD419206FE5DA00A54428 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 4F1F1DEC209F5D7D002D2CE6 /* Products */;
+					ProjectRef = 4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */;
+				},
 				{
 					ProductGroup = 4A0A0226207EABD800B5E129 /* Products */;
 					ProjectRef = 4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */;
@@ -249,6 +292,20 @@
 			remoteRef = 4A0A0234207EABD800B5E129 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		4F1F1DF0209F5D7D002D2CE6 /* ROGoogleTranslate.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ROGoogleTranslate.app;
+			remoteRef = 4F1F1DEF209F5D7D002D2CE6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F1F1E0B209F5E34002D2CE6 /* ROGT.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ROGT.framework;
+			remoteRef = 4F1F1E0A209F5E34002D2CE6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -285,6 +342,11 @@
 			isa = PBXTargetDependency;
 			name = SwiftOCR;
 			targetProxy = 4A0A0239207EAE2300B5E129 /* PBXContainerItemProxy */;
+		};
+		4F1F1E11209F607B002D2CE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ROGT;
+			targetProxy = 4F1F1E10209F607B002D2CE6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -445,6 +507,7 @@
 					../GPUImage/Source/Mac,
 				);
 				INFOPLIST_FILE = "ar-translator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.mar..ar-translator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -469,6 +532,7 @@
 					../GPUImage/Source/Mac,
 				);
 				INFOPLIST_FILE = "ar-translator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.mar..ar-translator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
