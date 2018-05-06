@@ -386,7 +386,7 @@
 				TargetAttributes = {
 					373ED0AE1CC9071C00C4758B = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = PEYF3H28AH;
+						DevelopmentTeam = N94AFLJG9D;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -701,7 +701,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = PEYF3H28AH;
+				DEVELOPMENT_TEAM = N94AFLJG9D;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -730,7 +730,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = PEYF3H28AH;
+				DEVELOPMENT_TEAM = N94AFLJG9D;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
