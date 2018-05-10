@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F8BB9DD20A49294003A107A /* ROGT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BB9D620A49294003A107A /* ROGT.framework */; };
 		4F8BB9DE20A49294003A107A /* ROGT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BB9D620A49294003A107A /* ROGT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4F8BB9E820A4941F003A107A /* ROGoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4617201DBE36780066AD96 /* ROGoogleTranslate.swift */; };
+		4FD15E8120A4A27C00067347 /* ROGoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD15E8020A4A27C00067347 /* ROGoogleTranslate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		4F8BB9D620A49294003A107A /* ROGT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ROGT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB4617201DBE36780066AD96 /* ROGoogleTranslate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ROGoogleTranslate.swift; path = Source/ROGoogleTranslate.swift; sourceTree = SOURCE_ROOT; };
+		4FD15E8020A4A27C00067347 /* ROGoogleTranslate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROGoogleTranslate.swift; sourceTree = "<group>"; };
 		CBCA3FB91DB90B850025D8E4 /* ROGoogleTranslate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROGoogleTranslate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -64,7 +64,7 @@
 		CBCA3FB01DB90B850025D8E4 = {
 			isa = PBXGroup;
 			children = (
-				CBCA3FBB1DB90B850025D8E4 /* ROGoogleTranslate */,
+				4FD15E8020A4A27C00067347 /* ROGoogleTranslate.swift */,
 				CBCA3FBA1DB90B850025D8E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,14 +76,6 @@
 				4F8BB9D620A49294003A107A /* ROGT.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CBCA3FBB1DB90B850025D8E4 /* ROGoogleTranslate */ = {
-			isa = PBXGroup;
-			children = (
-				CB4617201DBE36780066AD96 /* ROGoogleTranslate.swift */,
-			);
-			path = ROGoogleTranslate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F8BB9E820A4941F003A107A /* ROGoogleTranslate.swift in Sources */,
+				4FD15E8120A4A27C00067347 /* ROGoogleTranslate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +238,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = ROGT/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -285,7 +277,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = ROGT/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
