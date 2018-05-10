@@ -14,6 +14,7 @@
 		4A2BD423206FE5DA00A54428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2BD422206FE5DA00A54428 /* Assets.xcassets */; };
 		4A2BD426206FE5DA00A54428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2BD424206FE5DA00A54428 /* LaunchScreen.storyboard */; };
 		4A67CEA6207F62C700371298 /* UIImage+rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A67CEA5207F62C700371298 /* UIImage+rotate.swift */; };
+		4A823886209F95750010E7EA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4A823882209F95740010E7EA /* .gitignore */; };
 		4AA3EF71207FC630008D19F5 /* OrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3EF70207FC630008D19F5 /* OrientationManager.swift */; };
 		4AD2EDE9207EAEEF002F3824 /* SwiftOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0A022F207EABD800B5E129 /* SwiftOCR.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4AD2EDEA207EB105002F3824 /* SwiftOCR.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4A0A022F207EABD800B5E129 /* SwiftOCR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -136,6 +137,7 @@
 		4A2BD425206FE5DA00A54428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A2BD427206FE5DA00A54428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A67CEA5207F62C700371298 /* UIImage+rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+rotate.swift"; sourceTree = "<group>"; };
+		4A823882209F95740010E7EA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		4AA3EF70207FC630008D19F5 /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
 		4AD2EDEB207EB14E002F3824 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ROGoogleTranslate.xcodeproj; path = ../ROGoogleTranslate/ROGoogleTranslate.xcodeproj; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		4A2BD40F206FE5DA00A54428 = {
 			isa = PBXGroup;
 			children = (
+				4A823882209F95740010E7EA /* .gitignore */,
 				4A2BD41A206FE5DA00A54428 /* ar-translator */,
 				4A2BD419206FE5DA00A54428 /* Products */,
 				4F2E535B207D8B680052C5A3 /* Frameworks */,
@@ -372,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A823886209F95750010E7EA /* .gitignore in Resources */,
 				4A2BD426206FE5DA00A54428 /* LaunchScreen.storyboard in Resources */,
 				4A2BD423206FE5DA00A54428 /* Assets.xcassets in Resources */,
 				4A2BD421206FE5DA00A54428 /* Main.storyboard in Resources */,
