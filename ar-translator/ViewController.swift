@@ -22,7 +22,8 @@ class ViewController: UIViewController {
     
     var arrayOfBlobs = [CGRect]()
     @IBAction func onSnapPressed(_ sender: Any) {
-        let env = DotEnv(withFile: ".env")
+   
+        let env = DotEnv(withFile: "data.env")
         while let subview = blobsAreaView.subviews.last {
             subview.removeFromSuperview()
         }
@@ -35,7 +36,6 @@ class ViewController: UIViewController {
         let image = Scene.snapshot().rotate(radians: -rotation!)!
         OCRInstance.performCCL(image){ sizes in
             print(sizes)
-            
             
             for blob in sizes{
                 let view = BlobArea(frame: CGRect(x: blob.origin.x/1.9625, y: ( blob.origin.y)/1.9625, width: blob.size.width/1.9625, height: blob.size.height/1.9625))
@@ -57,18 +57,21 @@ class ViewController: UIViewController {
              let translator = ROGoogleTranslate()
              let key = env.get("API_KEY") ?? "API-KEY-NOT-FOUND"
              translator.apiKey = key
-             
-             translator.translate(params: params, callback: { (toPrint) in
+
+            translator.translate(params: params, callback: { (toPrint) in
              print("Translation: \(toPrint)")
              })
             
         }
     }
-    
+
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Create a FileManager instance
+        
         blobsArea.backgroundColor = UIColor.clear
         // Do any additional setup after loading the view, typically from a nib.
         blobsAreaView.backgroundColor = UIColor.clear
