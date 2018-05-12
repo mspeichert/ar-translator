@@ -51,16 +51,16 @@ class ViewController: UIViewController {
         OCRInstance.recognize(image){ result in
             print(result)
             
-             let params = ROGoogleTranslateParams(source: "pl",
-             target: "en",
-             text:   result)
-             let translator = ROGoogleTranslate()
-             let key = env.get("API_KEY") ?? "API-KEY-NOT-FOUND"
-             translator.apiKey = key
-
-            translator.translate(params: params, callback: { (toPrint) in
-             print("Translation: \(toPrint)")
-             })
+//             let params = ROGoogleTranslateParams(source: "pl",
+//             target: "en",
+//             text:   result)
+//            let translator = ROGoogleTranslate()
+//             let key = env.get("API_KEY") ?? "API-KEY-NOT-FOUND"
+//             translator.apiKey = key
+//
+//            translator.translate(params: params, callback: { (toPrint) in
+//             print("Translation: \(toPrint)")
+//             })
             
         }
     }

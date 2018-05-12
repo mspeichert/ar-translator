@@ -23,8 +23,6 @@
 		4F5B8464208030D200AE0D1E /* BlobArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5B8463208030D200AE0D1E /* BlobArea.swift */; };
 		4F8BB9CF20A49241003A107A /* DotEnv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BB9BE20A491BD003A107A /* DotEnv.framework */; };
 		4F8BB9D020A49254003A107A /* DotEnv.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4F8BB9BE20A491BD003A107A /* DotEnv.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4F8BB9E620A492A1003A107A /* ROGT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BB9E520A492A1003A107A /* ROGT.framework */; };
-		4F8BB9E720A492A9003A107A /* ROGT.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4F8BB9E520A492A1003A107A /* ROGT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,13 +61,6 @@
 			remoteGlobalIDString = 373ED0AE1CC9071C00C4758B;
 			remoteInfo = SwiftOCR;
 		};
-		4F8BB9B420A491AD003A107A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CBCA3FB91DB90B850025D8E4;
-			remoteInfo = ROGoogleTranslate;
-		};
 		4F8BB9BD20A491BD003A107A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4F1F1E25209F6367002D2CE6 /* SwiftDotEnv.xcodeproj */;
@@ -84,13 +75,6 @@
 			remoteGlobalIDString = "SwiftDotEnv::DotEnvTests::Product";
 			remoteInfo = DotEnvTests;
 		};
-		4F8BB9E420A492A1003A107A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F8BB9D620A49294003A107A;
-			remoteInfo = ROGT;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -100,7 +84,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4F8BB9E720A492A9003A107A /* ROGT.framework in Copy Files */,
 				4F8BB9D020A49254003A107A /* DotEnv.framework in Copy Files */,
 				4AD2EDEA207EB105002F3824 /* SwiftOCR.framework in Copy Files */,
 				4AD2EDED207EB18E002F3824 /* GPUImage.framework in Copy Files */,
@@ -124,7 +107,6 @@
 		4A823882209F95740010E7EA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		4AA3EF70207FC630008D19F5 /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
 		4AD2EDEB207EB14E002F3824 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ROGoogleTranslate.xcodeproj; path = ROGoogleTranslate/ROGoogleTranslate.xcodeproj; sourceTree = "<group>"; };
 		4F1F1E25209F6367002D2CE6 /* SwiftDotEnv.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftDotEnv.xcodeproj; path = SwiftDotEnv/SwiftDotEnv.xcodeproj; sourceTree = "<group>"; };
 		4F5B8463208030D200AE0D1E /* BlobArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobArea.swift; sourceTree = "<group>"; };
 		4FA85B1F209FC2B000150C70 /* data.env */ = {isa = PBXFileReference; lastKnownFileType = text; name = data.env; path = "/Users/Maro/Documents/AR/ar-translator/ar-translator/data.env"; sourceTree = "<absolute>"; };
@@ -135,7 +117,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F8BB9E620A492A1003A107A /* ROGT.framework in Frameworks */,
 				4F8BB9CF20A49241003A107A /* DotEnv.framework in Frameworks */,
 				4AD2EDEC207EB14E002F3824 /* GPUImage.framework in Frameworks */,
 				4AD2EDE9207EAEEF002F3824 /* SwiftOCR.framework in Frameworks */,
@@ -196,20 +177,10 @@
 			isa = PBXGroup;
 			children = (
 				4F1F1E25209F6367002D2CE6 /* SwiftDotEnv.xcodeproj */,
-				4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */,
 				4AD2EDEB207EB14E002F3824 /* GPUImage.framework */,
 				4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4F8BB9B120A491AC003A107A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4F8BB9B520A491AD003A107A /* ROGoogleTranslate.app */,
-				4F8BB9E520A492A1003A107A /* ROGT.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4F8BB9B620A491BD003A107A /* Products */ = {
@@ -272,10 +243,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 4F8BB9B120A491AC003A107A /* Products */;
-					ProjectRef = 4F1F1DEB209F5D7D002D2CE6 /* ROGoogleTranslate.xcodeproj */;
-				},
-				{
 					ProductGroup = 4F8BB9B620A491BD003A107A /* Products */;
 					ProjectRef = 4F1F1E25209F6367002D2CE6 /* SwiftDotEnv.xcodeproj */;
 				},
@@ -320,13 +287,6 @@
 			remoteRef = 4A0A0234207EABD800B5E129 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4F8BB9B520A491AD003A107A /* ROGoogleTranslate.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = ROGoogleTranslate.app;
-			remoteRef = 4F8BB9B420A491AD003A107A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		4F8BB9BE20A491BD003A107A /* DotEnv.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -336,16 +296,9 @@
 		};
 		4F8BB9C020A491BD003A107A /* DotEnvTests.xctest */ = {
 			isa = PBXReferenceProxy;
-			fileType = file;
+			fileType = wrapper.cfbundle;
 			path = DotEnvTests.xctest;
 			remoteRef = 4F8BB9BF20A491BD003A107A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4F8BB9E520A492A1003A107A /* ROGT.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ROGT.framework;
-			remoteRef = 4F8BB9E420A492A1003A107A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -539,7 +492,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N94AFLJG9D;
+				DEVELOPMENT_TEAM = PEYF3H28AH;
 				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = (
 					../GPUImage/Source,
@@ -552,7 +505,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.mar..ar-translator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.ar-translator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,7 +520,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N94AFLJG9D;
+				DEVELOPMENT_TEAM = PEYF3H28AH;
 				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = (
 					../GPUImage/Source,
@@ -580,7 +533,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.mar..ar-translator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.ar-translator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
