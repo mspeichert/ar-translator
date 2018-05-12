@@ -11,7 +11,6 @@ import ARKit
 import SpriteKit
 import SwiftOCR
 import CoreMotion
-import ROGT
 import DotEnv
 class ViewController: UIViewController {
     @IBOutlet weak var Scene: ARSCNView!
