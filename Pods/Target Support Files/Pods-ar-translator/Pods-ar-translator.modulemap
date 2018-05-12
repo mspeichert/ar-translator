@@ -1,0 +1,6 @@
+framework module Pods_ar_translator {
+  umbrella header "Pods-ar-translator-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -10,12 +10,14 @@ import UIKit
 import ARKit
 import SpriteKit
 import SwiftOCR
+import ROGoogleTranslate
 import CoreMotion
 import DotEnv
 class ViewController: UIViewController {
     @IBOutlet weak var Scene: ARSCNView!
-    @IBOutlet weak var blobsArea: UIImageView!
-    @IBOutlet weak var blobsAreaView: BlobArea!
+    
+    @IBOutlet weak var highlightersView: UIView!
+    
     let OCRInstance = SwiftOCR()
     var orientationManager: OrientationManager?
     
@@ -23,7 +25,7 @@ class ViewController: UIViewController {
     @IBAction func onSnapPressed(_ sender: Any) {
    
         let env = DotEnv(withFile: "data.env")
-        while let subview = blobsAreaView.subviews.last {
+        while let subview = highlightersView.subviews.last {
             subview.removeFromSuperview()
         }
         let rotation = self.orientationManager?.rotation
@@ -41,7 +43,7 @@ class ViewController: UIViewController {
                 view.backgroundColor = UIColor.clear
                 //To display frames
                 DispatchQueue.main.async {
-                    self.blobsAreaView.addSubview(view)
+                    self.highlightersView.addSubview(view)
                     view.setNeedsDisplay()
                 }
             }
@@ -50,16 +52,17 @@ class ViewController: UIViewController {
         OCRInstance.recognize(image){ result in
             print(result)
             
-//             let params = ROGoogleTranslateParams(source: "pl",
-//             target: "en",
-//             text:   result)
-//            let translator = ROGoogleTranslate()
-//             let key = env.get("API_KEY") ?? "API-KEY-NOT-FOUND"
-//             translator.apiKey = key
-//
-//            translator.translate(params: params, callback: { (toPrint) in
-//             print("Translation: \(toPrint)")
-//             })
+             let params = ROGoogleTranslateParams(source: "pl",
+             target: "en",
+             text:   result)
+            let key = env.get("API_KEY") ?? "API-KEY-NOT-FOUND"
+
+            let translator = ROGoogleTranslate()
+             translator.apiKey = key
+
+            translator.translate(params: params, callback: { (toPrint) in
+             print("Translation: \(toPrint)")
+             })
             
         }
     }
@@ -69,11 +72,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Create a FileManager instance
         
-        blobsArea.backgroundColor = UIColor.clear
-        // Do any additional setup after loading the view, typically from a nib.
-        blobsAreaView.backgroundColor = UIColor.clear
+        highlightersView.backgroundColor = UIColor.clear
         Scene.delegate = self
         orientationManager = OrientationManager()
     }

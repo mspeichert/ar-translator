@@ -14,6 +14,7 @@
 		4A2BD423206FE5DA00A54428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2BD422206FE5DA00A54428 /* Assets.xcassets */; };
 		4A2BD426206FE5DA00A54428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2BD424206FE5DA00A54428 /* LaunchScreen.storyboard */; };
 		4A67CEA6207F62C700371298 /* UIImage+rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A67CEA5207F62C700371298 /* UIImage+rotate.swift */; };
+		4A70E5A520A758010002E5F5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4A70E5A420A758010002E5F5 /* Podfile */; };
 		4A823886209F95750010E7EA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4A823882209F95740010E7EA /* .gitignore */; };
 		4AA3EF71207FC630008D19F5 /* OrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3EF70207FC630008D19F5 /* OrientationManager.swift */; };
 		4AD2EDE9207EAEEF002F3824 /* SwiftOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0A022F207EABD800B5E129 /* SwiftOCR.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -23,6 +24,7 @@
 		4F5B8464208030D200AE0D1E /* BlobArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5B8463208030D200AE0D1E /* BlobArea.swift */; };
 		4F8BB9CF20A49241003A107A /* DotEnv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BB9BE20A491BD003A107A /* DotEnv.framework */; };
 		4F8BB9D020A49254003A107A /* DotEnv.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 4F8BB9BE20A491BD003A107A /* DotEnv.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D27877FF17C5BC724D1990B5 /* Pods_ar_translator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404DA7D596A5D95D27536877 /* Pods_ar_translator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2E4187272692B8E4A4B78056 /* Pods-ar-translator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ar-translator.release.xcconfig"; path = "Pods/Target Support Files/Pods-ar-translator/Pods-ar-translator.release.xcconfig"; sourceTree = "<group>"; };
+		404DA7D596A5D95D27536877 /* Pods_ar_translator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ar_translator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SwiftOCR.xcodeproj; sourceTree = "<group>"; };
 		4A176BFB207E539D00F18A1E /* ViewController+ARDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ARDelegate.swift"; sourceTree = "<group>"; };
 		4A2BD418206FE5DA00A54428 /* ar-translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ar-translator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,11 +108,13 @@
 		4A2BD425206FE5DA00A54428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A2BD427206FE5DA00A54428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A67CEA5207F62C700371298 /* UIImage+rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+rotate.swift"; sourceTree = "<group>"; };
+		4A70E5A420A758010002E5F5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		4A823882209F95740010E7EA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		4AA3EF70207FC630008D19F5 /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
 		4AD2EDEB207EB14E002F3824 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F1F1E25209F6367002D2CE6 /* SwiftDotEnv.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftDotEnv.xcodeproj; path = SwiftDotEnv/SwiftDotEnv.xcodeproj; sourceTree = "<group>"; };
 		4F5B8463208030D200AE0D1E /* BlobArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobArea.swift; sourceTree = "<group>"; };
+		7DBFFBC8FE0CAABC1ED777F9 /* Pods-ar-translator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ar-translator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ar-translator/Pods-ar-translator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +125,22 @@
 				4F8BB9CF20A49241003A107A /* DotEnv.framework in Frameworks */,
 				4AD2EDEC207EB14E002F3824 /* GPUImage.framework in Frameworks */,
 				4AD2EDE9207EAEEF002F3824 /* SwiftOCR.framework in Frameworks */,
+				D27877FF17C5BC724D1990B5 /* Pods_ar_translator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26BFDE8AE42D8136DDE89BBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DBFFBC8FE0CAABC1ED777F9 /* Pods-ar-translator.debug.xcconfig */,
+				2E4187272692B8E4A4B78056 /* Pods-ar-translator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4A0A0226207EABD800B5E129 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,10 +155,12 @@
 		4A2BD40F206FE5DA00A54428 = {
 			isa = PBXGroup;
 			children = (
+				4A70E5A420A758010002E5F5 /* Podfile */,
 				4A823882209F95740010E7EA /* .gitignore */,
 				4A2BD41A206FE5DA00A54428 /* ar-translator */,
 				4A2BD419206FE5DA00A54428 /* Products */,
 				4F2E535B207D8B680052C5A3 /* Frameworks */,
+				26BFDE8AE42D8136DDE89BBC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +195,7 @@
 				4F1F1E25209F6367002D2CE6 /* SwiftDotEnv.xcodeproj */,
 				4AD2EDEB207EB14E002F3824 /* GPUImage.framework */,
 				4A0A0225207EABD800B5E129 /* SwiftOCR.xcodeproj */,
+				404DA7D596A5D95D27536877 /* Pods_ar_translator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,10 +216,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A2BD42A206FE5DA00A54428 /* Build configuration list for PBXNativeTarget "ar-translator" */;
 			buildPhases = (
+				DB505B67E1E194F6EE954A75 /* [CP] Check Pods Manifest.lock */,
 				4A2BD414206FE5DA00A54428 /* Sources */,
 				4A2BD415206FE5DA00A54428 /* Frameworks */,
 				4A2BD416206FE5DA00A54428 /* Resources */,
 				4F2E535D207D8B6C0052C5A3 /* Copy Files */,
+				20B72A7B42562ABA88CD3564 /* [CP] Embed Pods Frameworks */,
+				50DB437728AD9644E5C6CDCB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A70E5A520A758010002E5F5 /* Podfile in Resources */,
 				4A823886209F95750010E7EA /* .gitignore in Resources */,
 				4A2BD426206FE5DA00A54428 /* LaunchScreen.storyboard in Resources */,
 				4A2BD423206FE5DA00A54428 /* Assets.xcassets in Resources */,
@@ -314,6 +337,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20B72A7B42562ABA88CD3564 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ar-translator/Pods-ar-translator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ROGoogleTranslate/ROGoogleTranslate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ROGoogleTranslate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ar-translator/Pods-ar-translator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50DB437728AD9644E5C6CDCB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ar-translator/Pods-ar-translator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB505B67E1E194F6EE954A75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ar-translator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A2BD414206FE5DA00A54428 /* Sources */ = {
@@ -484,6 +561,7 @@
 		};
 		4A2BD42B206FE5DA00A54428 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DBFFBC8FE0CAABC1ED777F9 /* Pods-ar-translator.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -499,10 +577,7 @@
 				);
 				INFOPLIST_FILE = "ar-translator/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.ar-translator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -512,6 +587,7 @@
 		};
 		4A2BD42C206FE5DA00A54428 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E4187272692B8E4A4B78056 /* Pods-ar-translator.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -527,10 +603,7 @@
 				);
 				INFOPLIST_FILE = "ar-translator/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pg.ar-translator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

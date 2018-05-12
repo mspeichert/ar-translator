@@ -1,0 +1,12 @@
+PODS:
+  - ROGoogleTranslate (0.0.5)
+
+DEPENDENCIES:
+  - ROGoogleTranslate
+
+SPEC CHECKSUMS:
+  ROGoogleTranslate: 344d579487c21af1ae54138baa68605b861ba84e
+
+PODFILE CHECKSUM: d5fdc9feea897c64629567c556db6bd6b0a6002d
+
+COCOAPODS: 1.4.0

@@ -16,6 +16,7 @@ class BlobArea : UIView {
 
         super.init(coder: aDecoder)
     }
+    
    override func draw(_ rect: CGRect) {
     let xPos = rect.origin.x
     let yPos = rect.origin.y
@@ -30,7 +31,7 @@ class BlobArea : UIView {
     myBezier.addLine(to: CGPoint(x: xPos, y: yPos+yourHeight))
 
     myBezier.close()
-    UIColor.black.setStroke()
-    myBezier.stroke()
+    UIColor.red.setFill()
+    myBezier.fill(with: .color, alpha: 0.5)
     }
 }
