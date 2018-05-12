@@ -13,7 +13,7 @@ class OrientationManager {
     
     let UPDATE_INTERVAL = 0.3
     var manager: CMMotionManager?
-    var rotation: Float?
+    var rotation: Double?
     
     init() {
         manager = CMMotionManager()
@@ -27,7 +27,7 @@ class OrientationManager {
                 manager.startDeviceMotionUpdates(to: queue) {
                     [weak self] (data: CMDeviceMotion?, error: Error?) in
                     if let gravity = data?.gravity {
-                        self?.rotation = Float(atan2(gravity.x, gravity.y) - Double.pi)
+                        self?.rotation = atan2(gravity.x, gravity.y) - Double.pi
 //                        print(self?.rotation)
                     }
                 }
