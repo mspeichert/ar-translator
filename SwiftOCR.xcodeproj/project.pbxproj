@@ -60,7 +60,6 @@
 		377885741CCCF37400A41020 /* TrainingBackground_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3778856C1CCCF37400A41020 /* TrainingBackground_4.png */; };
 		37A2346A1CDF9A1800CB3323 /* SwiftOCRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778855C1CCCF11900A41020 /* SwiftOCRTests.swift */; };
 		37A2346B1CDFA5B200CB3323 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373ED1491CC9521B00C4758B /* GPUImage.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		4AE7826A207E600B00E1E705 /* SwiftOCR+performCCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE78265207E600A00E1E705 /* SwiftOCR+performCCL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,7 +131,6 @@
 		3778856A1CCCF37400A41020 /* TrainingBackground_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrainingBackground_2.png; path = "Realistic Training Images/TrainingBackground_2.png"; sourceTree = "<group>"; };
 		3778856B1CCCF37400A41020 /* TrainingBackground_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrainingBackground_3.png; path = "Realistic Training Images/TrainingBackground_3.png"; sourceTree = "<group>"; };
 		3778856C1CCCF37400A41020 /* TrainingBackground_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrainingBackground_4.png; path = "Realistic Training Images/TrainingBackground_4.png"; sourceTree = "<group>"; };
-		4AE78265207E600A00E1E705 /* SwiftOCR+performCCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftOCR+performCCL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +192,6 @@
 		373ED0B11CC9071D00C4758B /* SwiftOCR */ = {
 			isa = PBXGroup;
 			children = (
-				4AE78265207E600A00E1E705 /* SwiftOCR+performCCL.swift */,
 				373ED0C91CC9076300C4758B /* SwiftOCR.swift */,
 				373ED0CA1CC9076300C4758B /* SwiftOCRTraining.swift */,
 				373ED1281CC912C000C4758B /* OCR-Network */,
@@ -524,7 +521,6 @@
 				373ED10E1CC90A2300C4758B /* Operations.swift in Sources */,
 				373ED0CB1CC9076300C4758B /* SwiftOCR.swift in Sources */,
 				373ED1141CC90A2300C4758B /* Storage.swift in Sources */,
-				4AE7826A207E600B00E1E705 /* SwiftOCR+performCCL.swift in Sources */,
 				373ED1081CC90A2300C4758B /* FFNN+Storage.swift in Sources */,
 				373ED1301CC917A500C4758B /* Extensions.swift in Sources */,
 				373ED1101CC90A2300C4758B /* Random.swift in Sources */,

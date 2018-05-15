@@ -703,6 +703,99 @@ public protocol SwiftOCRDelegate: class {
     
 }
 
+
+public extension SwiftOCR {
+    /**
+     
+     Extracts the characters using [Connected-component labeling](https://en.wikipedia.org/wiki/Connected-component_labeling) and callbacks with their location data
+     
+     - Parameter image:             The image used for OCR
+     - Parameter completionHandler: The completion handler that gets invoked after CCL is finished, returning
+     results of this action.
+     
+     */
+    public   func recognizeWithCCLEffects(_ image: OCRImage,
+                                        _ onCCLComleted: @escaping ([CGRect]) -> Void,
+                                        _ completionHandler: @escaping (String) -> Void){
+        
+        func indexToCharacter(_ index: Int) -> Character {
+            return Array(characters.characters)[index]
+        }
+        
+        func checkWhiteAndBlackListForCharacter(_ character: Character) -> Bool {
+            let whiteList =   characterWhiteList?.characters.contains(character) ?? true
+            let blackList = !(characterBlackList?.characters.contains(character) ?? false)
+            
+            return whiteList && blackList
+        }
+        
+        DispatchQueue.global(qos: .userInitiated).async {
+            let preprocessedImage      = self.delegate?.preprocessImageForOCR(image) ?? self.preprocessImageForOCR(image)
+            
+            let blobs                  = self.extractBlobs(preprocessedImage)
+            onCCLComleted(blobs.map({$0.1}))
+            var recognizedString       = ""
+            var ocrRecognizedBlobArray = [SwiftOCRRecognizedBlob]()
+            
+            for blob in blobs {
+                do {
+                    let blobData       = self.convertImageToFloatArray(blob.0, resize: true)
+                    let networkResult  = try self.network.update(inputs: blobData)
+                    
+                    //Generate Output Character
+                    if networkResult.max() >= self.confidenceThreshold {
+                        
+                        /*
+                         let recognizedChar = Array(characters.characters)[networkResult.indexOf(networkResult.maxElement() ?? 0) ?? 0]
+                         recognizedString.append(recognizedChar)
+                         */
+                        
+                        for (networkIndex, _) in networkResult.enumerated().sorted(by: { $0.element > $1.element }) {
+                            let character = indexToCharacter(networkIndex)
+                            
+                            guard checkWhiteAndBlackListForCharacter(character) else {
+                                continue
+                            }
+                            
+                            recognizedString.append(character)
+                            break
+                        }
+                    }
+                    
+                    //Generate SwiftOCRRecognizedBlob
+                    
+                    var ocrRecognizedBlobCharactersWithConfidenceArray = [(character: Character, confidence: Float)]()
+                    let ocrRecognizedBlobConfidenceThreshold = networkResult.reduce(0, +)/Float(networkResult.count)
+                    
+                    for networkResultIndex in 0..<networkResult.count {
+                        let characterConfidence = networkResult[networkResultIndex]
+                        let character           = indexToCharacter(networkResultIndex)
+                        
+                        guard characterConfidence >= ocrRecognizedBlobConfidenceThreshold && checkWhiteAndBlackListForCharacter(character) else {
+                            continue
+                        }
+                        
+                        ocrRecognizedBlobCharactersWithConfidenceArray.append((character: character, confidence: characterConfidence))
+                    }
+                    
+                    let currentRecognizedBlob = SwiftOCRRecognizedBlob(charactersWithConfidence: ocrRecognizedBlobCharactersWithConfidenceArray, boundingBox: blob.1)
+                    
+                    ocrRecognizedBlobArray.append(currentRecognizedBlob)
+                    
+                } catch {
+                    print(error)
+                }
+                
+            }
+            
+            self.currentOCRRecognizedBlobs = ocrRecognizedBlobArray
+            completionHandler(recognizedString)
+        }
+    }
+}
+
+
+
 extension SwiftOCRDelegate {
     func preprocessImageForOCR(_ inputImage: OCRImage) -> OCRImage? {
         return nil
