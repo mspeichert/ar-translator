@@ -32,8 +32,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var actionButton: UIButton!
     let OCRInstance = SwiftOCR()
     var isInFindMode = true
+    var isProcessing = false
     var timer = Timer()
-    var orientationManager: OrientationManager?
+//    var orientationManager: OrientationManager?
     var recognizedWord: String = ""
     
     func radians (fromDegrees degrees: Double) -> Double { return degrees*Double.pi/180 }
@@ -71,7 +72,7 @@ class ViewController: UIViewController {
                                                             y: field.y,
                                                             width: field.width,
                                                             height: field.height))
-                        label.text = toPrint
+                        label.text = toPrint.uppercased()
                         label.font = UIFont(name: "Courier new", size: field.height)
                         label.textAlignment = NSTextAlignment.center
                         label.textColor = UIColor.black
@@ -91,7 +92,8 @@ class ViewController: UIViewController {
     }
 
     @objc func findLetters(){
-        
+        if(isProcessing) { return }
+        isProcessing = true
         if let image = determineImage() {
             OCRInstance.recognizeWithCCLEffects(image, { sizes in
                 if(self.isInFindMode){
@@ -121,16 +123,12 @@ class ViewController: UIViewController {
             }, { result in
                 print(result)
                 self.recognizedWord = result
+                self.isProcessing = false
             })
         }
     }
     
     func determineImage() -> UIImage?{
-        let rotation = self.orientationManager?.rotation
-        
-        guard rotation != nil else {
-            return nil
-        }
         return Scene.snapshot()
     }
     
@@ -139,14 +137,13 @@ class ViewController: UIViewController {
         
         highlightersView.backgroundColor = UIColor.clear
         Scene.delegate = self
-        orientationManager = OrientationManager()
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.findLetters), userInfo: nil, repeats: true)
+//        orientationManager = OrientationManager()
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.findLetters), userInfo: nil, repeats: true)
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         Scene.session.run(sceneViewConfig)
-        print(Scene.scene.rootNode.childNodes)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -155,8 +152,6 @@ class ViewController: UIViewController {
     }
     
     var sceneViewConfig: ARWorldTrackingConfiguration = {
-        let configuration = ARWorldTrackingConfiguration()
-        configuration.planeDetection = .horizontal
-        return configuration
+        return ARWorldTrackingConfiguration()
     }()
 }
