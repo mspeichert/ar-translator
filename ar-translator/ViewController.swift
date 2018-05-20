@@ -77,6 +77,7 @@ class ViewController: UIViewController {
                         label.textAlignment = NSTextAlignment.center
                         label.textColor = UIColor.black
                         label.backgroundColor = UIColor.white
+                        label.adjustsFontSizeToFitWidth = true
                         self.highlightersView.addSubview(label)
                     }
                 }
